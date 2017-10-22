@@ -2568,7 +2568,7 @@ Transitions with exit times greater than one will be evaluated only once, so the
     </member>
     <member name="M:UnityEditor.AssetDatabase.GetSubFolders(System.String)">
       <summary>
-        <para>Given a path to a directory in the Assets folder, relative to the project folder, this method will return an array of all its subdirectories.</para>
+        <para>Given an absolute path to a directory, this method will return an array of all it's subdirectories.</para>
       </summary>
       <param name="path"></param>
     </member>

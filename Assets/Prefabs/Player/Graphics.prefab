@@ -37,6 +37,9 @@ GameObject:
   - component: {fileID: 4476120749594552}
   - component: {fileID: 61921416527118078}
   - component: {fileID: 50385755294599900}
+  - component: {fileID: 114773668369131638}
+  - component: {fileID: 114184078983610134}
+  - component: {fileID: 114487716661204984}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -116,6 +119,108 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.48}
   m_EdgeRadius: 0.16
+--- !u!114 &114184078983610134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1533557381424552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8630cc121297d254eb37806a45bda50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCeiled: 0
+  wasCeiledLastFrame: 0
+  justCeiled: 0
+  justNOTCeiled: 0
+  isJumping: 0
+  ceilingBoxPos: {x: 0, y: 0.25}
+  ceilingBoxSize: {x: 0.22, y: 0.04}
+  maxHits: 1
+  detectCeiling: 1
+  filter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 256
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+--- !u!114 &114487716661204984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1533557381424552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aedeca71c4c6a4b47bbad8f166e96c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWalled: 0
+  wasWalledLastFrame: 0
+  justWalled: 0
+  justNOTWalled: 0
+  isWalking: 0
+  wallBoxPos: {x: 0.22, y: -0.1}
+  wallBoxSize: {x: 0.05, y: 0.9}
+  maxHits: 1
+  detectWall: 1
+  filter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 256
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+--- !u!114 &114773668369131638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1533557381424552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e3760159f120c48b984ed2e1cb2896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrounded: 0
+  wasGroundedLastFrame: 0
+  justGrounded: 0
+  justNOTGrounded: 0
+  isFalling: 0
+  groundBoxPos: {x: 0.01, y: -0.53}
+  groundBoxSize: {x: 0.45, y: 0.04}
+  maxHits: 1
+  detectGround: 1
+  filter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 256
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!212 &212161348633865940
 SpriteRenderer:
   m_ObjectHideFlags: 1

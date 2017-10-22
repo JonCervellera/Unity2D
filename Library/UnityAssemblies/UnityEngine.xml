@@ -8975,7 +8975,7 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
     </member>
     <member name="P:UnityEngine.Camera.activeTexture">
       <summary>
-        <para>Gets the temporary RenderTexture target for this Camera.</para>
+        <para>Gets or sets the temporary RenderTexture target for this Camera.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Camera.actualRenderingPath">
@@ -24190,16 +24190,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>iPhone 7 Plus.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone8">
-      <summary>
-        <para>iPhone 8.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone8Plus">
-      <summary>
-        <para>iPhone 8 Plus.</para>
-      </summary>
-    </member>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneSE1Gen">
       <summary>
         <para>iPhone SE, first generation.</para>
@@ -24208,11 +24198,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneUnknown">
       <summary>
         <para>Yet unknown iPhone.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneX">
-      <summary>
-        <para>iPhone X.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch1Gen">
@@ -30266,13 +30251,6 @@ Use false when you want to use the existing bounding box and reduce the CPU cost
       </summary>
       <param name="routine"></param>
     </member>
-    <member name="M:UnityEngine.MonoBehaviour.StartCoroutine(System.String,System.Object)">
-      <summary>
-        <para>Starts a coroutine named methodName.</para>
-      </summary>
-      <param name="methodName"></param>
-      <param name="value"></param>
-    </member>
     <member name="M:UnityEngine.MonoBehaviour.StartCoroutine(System.String)">
       <summary>
         <para>Starts a coroutine named methodName.</para>
@@ -30280,11 +30258,12 @@ Use false when you want to use the existing bounding box and reduce the CPU cost
       <param name="methodName"></param>
       <param name="value"></param>
     </member>
-    <member name="M:UnityEngine.MonoBehaviour.StartCoroutine">
+    <member name="M:UnityEngine.MonoBehaviour.StartCoroutine(System.String,System.Object)">
       <summary>
-        <para>Starts a Coroutine named coroutine.</para>
+        <para>Starts a coroutine named methodName.</para>
       </summary>
-      <param name="coroutine">Name of the created Coroutine.</param>
+      <param name="methodName"></param>
+      <param name="value"></param>
     </member>
     <member name="M:UnityEngine.MonoBehaviour.StopAllCoroutines">
       <summary>
@@ -30296,21 +30275,14 @@ Use false when you want to use the existing bounding box and reduce the CPU cost
         <para>Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.</para>
       </summary>
       <param name="methodName">Name of coroutine.</param>
-      <param name="routine">Name of the function in code, including coroutines.</param>
+      <param name="routine">Name of the function in code.</param>
     </member>
     <member name="M:UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)">
       <summary>
         <para>Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.</para>
       </summary>
       <param name="methodName">Name of coroutine.</param>
-      <param name="routine">Name of the function in code, including coroutines.</param>
-    </member>
-    <member name="M:UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)">
-      <summary>
-        <para>Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.</para>
-      </summary>
-      <param name="methodName">Name of coroutine.</param>
-      <param name="routine">Name of the function in code, including coroutines.</param>
+      <param name="routine">Name of the function in code.</param>
     </member>
     <member name="T:UnityEngine.Motion">
       <summary>
